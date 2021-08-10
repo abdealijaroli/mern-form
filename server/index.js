@@ -62,6 +62,6 @@ app.get('/', (req, res) => {
 
 
 // Server listen
-app.listen(9002, () => {
+app.listen(process.env.PORT || 9002, () => {
    console.log("Server listening on 9002")
 });
