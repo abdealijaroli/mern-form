@@ -22,7 +22,7 @@ const App = () => {
     const {name, email} = user;
     if(name && validator.isEmail(email)){
       axios.post("http://localhost:9002/register", user)
-      .then(res => console.log(res));
+      .then(res => alert(res.data.message));
     }
     else{
       alert(`Invalid input(s)`);
