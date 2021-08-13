@@ -21,7 +21,7 @@ const App = () => {
 
       const { name, email } = user;
       if (name && validator.isEmail(email)) {
-         axios.post("http://localhost:9002/register", user)
+         axios.post("https://floating-springs-63775.herokuapp.com/register", user)
             .then(res => alert(res.data.message));
       }
       else {
